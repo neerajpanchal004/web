@@ -1,20 +1,20 @@
 "use client"
 import React from 'react'
 import Image from 'next/image';
-import { Input, InputGroup, InputLeftElement, } from '@chakra-ui/react';
+// import { Input, InputGroup, InputLeftElement, } from '@chakra-ui/react';
 import { FaSearch, FaShoppingCart } from 'react-icons/fa'; // You can choose any icon you like
 import ButterFly from './ButterFly';
 import Link from  'next/link'
 
 // Create a custom input component
-const CustomInput = () => {
-  return (
-    <InputGroup w={['auto',300,300]} >
-      <InputLeftElement pointerEvents="none" children={<FaSearch />}/>
-      <Input type="text" placeholder="Search" />
-    </InputGroup>
-  );
-};
+// const CustomInput = () => {
+//   return (
+//     <InputGroup w={['auto',300,300]} >
+//       <InputLeftElement pointerEvents="none" children={<FaSearch />}/>
+//       <Input type="text" placeholder="Search" />
+//     </InputGroup>
+//   );
+// };
 
 
 
@@ -31,7 +31,7 @@ const Header = () => {
 
           </div>
           <div className='flex items-center gap-5 sm:gap-10'>
-            <CustomInput />
+            {/* <CustomInput /> */}
             <Link href='/login'>
             <button
         className="bg-blue-500 text-white py-2 px-2 sm:px-4 rounded-md hover:bg-blue-600 focus:outline-none"

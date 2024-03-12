@@ -42,10 +42,9 @@ const Home = () => {
         {/* three lorem card */}
 
 
-    <Accordian />
+    {/* <Accordian /> */}
 
-    </div>
-   
+</div>   
     </>
   )
 }

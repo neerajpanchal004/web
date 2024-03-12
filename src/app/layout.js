@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Contextapi from "./context/Contextapi";
-import { Chakraprovider } from "./components/ChakkraProvider";
+// import { Chakraprovider } from "./components/ChakkraProvider";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
