@@ -16,13 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Chakraprovider>
+        {/* <Chakraprovider> */}
           <Contextapi>
             <Header/>
             {children}
             <Footer/>
           </Contextapi>
-        </Chakraprovider>
+        {/* </Chakraprovider> */}
       </body>
     </html>
   );
