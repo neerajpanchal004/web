@@ -4,15 +4,28 @@ import { UserContext } from '../context/Contextapi'
 import {getData} from './Constant'
 import ProductCard from './ProductCard'
 import Loader from './Loader'
+import axios from 'axios'
 
 
 const MenWear = () => {
     const { menWear,setMenWear,setRoute } = useContext(UserContext)
+    let apipoint = "/api/getProducts?category=menwear";
+
+    async function  fetchdata(){ 
+        try {
+            let  response = await axios (apipoint);
+            setMenWear(response.data)
+            
+        } catch (error) {
+            
+        }
+    }
+
     
 
     useEffect(() => {
-        let apipoint = "/api/getProducts?category=menwear";
-        getData(apipoint, setMenWear); 
+        // getData(apipoint, setMenWear); 
+        fetchdata()
     }, [])
     
     if (menWear==undefined) {
