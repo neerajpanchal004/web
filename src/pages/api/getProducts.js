@@ -6,19 +6,20 @@ export default async function handler(req, res) {
 
     if (req.method  == "GET") {
         let data;
-        if(req.query.category=="mobiles"){
+        const { category } = req.query;
+        if(category=="mobiles"){
            data = Mobiles 
         }
 
-        if(req.query.category=="shoes"){
+        if(category=="shoes"){
             data = Shoes 
          }
 
-         if(req.query.category=="sports"){
+         if(category=="sports"){
             data = Sports 
          }
 
-         if(req.query.category=="menwear"){
+         if(category=="menwear"){
             data = Menwear
          }
       res.status(200).json(data);
